@@ -1,0 +1,27 @@
+/* css file for free code camp
+	form project
+*/
+
+body{
+	background-color: purple;
+}
+
+.main_container{
+
+	width: 460px;
+	margin: auto;
+	padding: 10px;
+	background-color: yellow;
+	display: flex;
+
+	align-items: column;
+}
+
+.heading{
+	width:100%;
+}
+#survey-form{
+	width:100%;
+
+
+}

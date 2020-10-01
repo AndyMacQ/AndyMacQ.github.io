@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Feedback</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+
+	<body>
+
+<div class="main_container">
+
+	<form id="survey-form" action="#" method="post">
+
+	<div class="heading">
+	<h1 id="title">Documentation Feedback</h1>
+	<p id="description">Please provide some feedback about our documentation</p>
+	</div>
+
+
+<!-- collecting name, email and number (age)
+	name and email both have form validation,
+	number also has a range (max and min),
+	all have appropriate id's, all have placeholder text-->
+
+
+	<div class="contact">
+	<div class="item"><label id="name-label" for="name">Your Name:</label>
+		<input required type="text" id="name" for="name" placeholder="Your name here" maxlength="45" >
+	</div>
+	<div class="item"><label id="email-label" for="email">Your email:</label>
+		<input required type="email" id="email" for="email" placeholder="email address" maxlength="40">
+	</div>
+	<div class="item"><label id="number-label" for="number">How many hours a week do you code?:</label>
+		<input required type="number" id="number" for="number" placeholder="0 to 168 hours" min="0" max="168" maxlength="20">
+	</div>
+
+	</div>
+<!- a drop down that lets user select an option -->
+<div>
+<h2>Coding experience</h2>
+<p>Where are you in your coding career?:</p>
+	<select id="dropdown" name="career_level">
+		<option value="non_professioal">Non-professional</option>
+		<option value="student">Student</option>
+		<option value="early_career">Early career</option>
+		<option value="mid_career">Mid-career</option>
+		<option value="senior">Senior-level</option>
+
+	</select>
+</div>
+<!-- A group of radio buttons -->
+<p>What is your primary occupation?:</p>
+	<div class="occupation">
+	<div>
+	<input type="radio" id="coder" name="occupation" value="coder"><label for="coder">Coder</label>
+	</div>
+	<div>
+	<input type="radio" id="project_manager" name="occupation" value="project_manager"><label for="project_manager">Project Manager</label>
+	</div>
+	<div>
+	<input type="radio" id="tech_writer" name="occupation" value="tech_writer"><label for="tech_writer">Technical Writer</label>
+	</div>
+	<div>
+	<input type="radio" id="web_master" name="occupation" value="web_master"><label for="web_master">Web Master</label>
+	</div>
+	<div><input type="radio" id="other" name="occupation" value="other"><label for="other">Other</label></div>
+	</div>
+
+<!-- A set of checkboxes  -->
+<p>What areas of software development interest you?</p>
+	<div class="area">
+	<div>
+	<input type="checkbox" id="client" name="client" value="client"><label for="client">Client-side</label>
+	</div>
+	<div>
+	<input type="checkbox" id="server" name="server" value="server"><label for="">Server-side</label>
+	</div>
+	<div>
+	<input type="checkbox" id="applications" name="applications" value="applications"><label for="applications">Application development</label>
+	</div>
+	<div>
+	<input type="checkbox" id="ux" name="ux" value="ux"><label for="ux">UI/UX </label>
+	</div>
+	<div>
+	<input type="checkbox" id="data" name="data" value="data"><label for="data">Big data</label>
+	</div>
+	<div>
+	<input type="checkbox" id="machine" name="machine" value="machine"><label for="machine">Machine learning</label>
+	</div>
+
+	</div>
+<!-- A textarea -->
+<h3>Suggestions</h3>
+<textarea id="suggestions" rows="5" columns="150" placeholder="Please describe how we can improve the documentation"></textarea>
+<!-- reset and submission button -->
+<h2>Submission</h2>
+<p>Please review your answers. Press "Reset" to start again or "Submit" to finish</p>
+	<input type="reset" id="reset" value="Reset">
+	<input type="submit" id="submit" value="Submit">
+
+	</form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+</script>
+	</body>
+</html>

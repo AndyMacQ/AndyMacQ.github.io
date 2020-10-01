@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jabberwocky Documentation</title>
+  <link href="jabberwocky.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="wrapper">
+    <nav id="navbar">
+    <header>
+    <h1>Jabberwocky</h1>
+      </header>
+      <ul>
+        <a href="#Overview" class="nav-link"><li><div class="box"><h2>Overview</h2></box></li></a>
+        <a href="#Design_Goals" class="nav-link"><li><div class="box"><h2>Design Goals</h2></box></li></a>
+        <a href="#Variables" class="nav-link"><li><div class="box"><h2>Variables</h2></box></li></a>
+        <a href="#Operators" class="nav-link"><li><div class="box"><h2>Operators</h2></box></li></a>
+        <a href="#Data_Structures" class="nav-link"><li><div class="box"><h2>Data Structures</h2></box></li></a>
+        <a href="#Imports" class="nav-link"><li><div class="box"><h2>Imports</h2></box></li></a>
+        <a href="#Syntax" class="nav-link"><li><div class="box"><h2>Syntax</h2></box></li></a>
+
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section"  id="Overview">
+        <header><h2>Overview</h2></header>
+<p>Jabberwocky is non-existant programming language. Its technical documentation is mostly written in Lorem Ipsum. There is no compiler or interpreter. None of the
+  code examples are functional. Use at your own risk, and have fun with it.</p>
+</section>
+
+<section class="main-section" id="Design_Goals">
+  <header><h2>Design Goals</h2></header>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+  Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+  nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+  tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+  nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+  inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia
+  nunc. </p>
+  <ul>
+    <li>Clarity: Morbi lacinia molestie dui.</li>
+    <li>Simplicity: Maecenas aliquet mollis lectus.</li>
+    <li>Utility:  Etiam ultrices.</li>
+</ul>
+<p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at
+  dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc
+  egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non,
+  massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus
+  metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat
+  condimentum velit. </p>
+  </section>
+<section class="main-section"  id="Variables">
+  <header><h2>Variables</h2></header>
+<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+  inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis,
+  tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi.
+  Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+  Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna
+  luctus suscipit. </p>
+  <ul>
+  <li>bool: takes the values true (1) or false(0).</li>
+  <li>int: takes integer values from 0 to 65,535.</li>
+  <li>float: takes positive and negative numerical values with double precision.</li>
+  <li>char: takes a value from 0 to 255. Interpreted as an ASCII symbol in the default environment.</li>
+  <li>ptr: takes an integer value that points to a variable's location in memory.</li>
+  <li>val: takes an untyped variable. (This permits runtime resolution).</li>
+</ul>
+
+<p>Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae
+  pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam:</p>
+  <div class="indent-code"><code>
+    <span class="italic">
+   /*<br>
+    Jabberwocky follows c language commenting conventions<br>
+    */<br>
+    //double slashes indicate a single line comment<br>
+    //declaring typed variables<br>
+    //use camel case to name variables: 'thisIsALegalName'<br>
+    //for bool, int, float,char, and ptr follow the examples below:<br></span>
+    bool{mimsy};    //declaring a bool<br>
+    int{borogove}   //declaring an int<br>
+    <span class="italic">
+    //declaring untyped variables<br>
+    //by convention, begin var names with a lower case d<br></span>
+    var{dVorpal}<br>
+
+</code></div>
+  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+  cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non
+  quam.</p>
+  <div class="indent-code"><code><span class="italic">
+    /*values can be assigned when variables are declared<br>
+      use -> as the assignment operator<br>
+      place values in double quotes<br>
+    */<br></span>
+    bool{mimsy}->"true"  // mimsy is now a boolean with value "true"<br>
+    <spank class="italic">//when assigning pointers to variables, omit the double quotes<br></span>
+    ptr{brillig}->mimsy //brillig now points to mimsy
+  </code></div>
+  <p> In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede
+  facilisis laoreet. </p>
+
+  <div class="indent-code"><code><span class="italic">
+    //use the ? operator to dereference pointers<br></span>
+    ?brillig //returns the value of mimsy ("true")<br>
+  </code></div>
+
+  <p>Donec lacus nunc, viverra nec, blandit vel, egestas et,
+  augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim.
+  Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla
+  facilisi. </p> </section>
+
+  <section class="main-section"  id="Operators">
+    <header><h2>Operators</h2></header>
+  <p>Maecenas aliquet mollis lectus. Vivamus consectetuer risus et
+  tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+  odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
+  <div class="indent-code">
+    <code>
+  <span class="italic">  //arithmetic operators<br></span>
+    + - * / % <br>
+  <span class="italic">  //logical operators<br></span>
+    & | ! XOR
+    <span class="italic">//pointer operators<br></span>
+    ? #<br>
+    <span class="italic">//assignment<br></span>
+    -><br>
+  <span class="italic">  //type of operators<br></span>
+    ??<br>
+  </code></div>
+
+<p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+  mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum
+  lacinia arcu eget nulla.</p>
+
+<section class="main-section"  id="Data_Structures">
+  <header><h2>Data Structures</h2></header>
+<p>Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor.
+  Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim
+  in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam.</p>
+  <ul>
+    <li>arr: arrays in Jabberwocky are zero-indexed.</li>
+    <li>obj: objects are fully supported in Jabberwocky.</li>
+
+  </ul>
+  <p>Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu,
+   pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. </p>
+<div class="indent-code">
+<code>
+  <span class="italic">//declaring an array<br></span>
+  arr gabe[]<br>
+<span class="italic">  //all array elements are always of type var<br>
+  //assigning values to elements<br></span>
+  gabe[n]=borogove //the nth element of gabe now has the value of borogove<br>
+  <span class="italic">//different elements can have different types<br></span>
+  gabe[n+1]=mimsy //the n+1 element of gabe is now a boolean, n is still an int<br>
+
+</code></div>
+
+<p>Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus
+  elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci,
+  aliquet et, iaculis et, viverra vitae, ligula.</p><p> Nulla ut felis in purus aliquam
+  imperdiet. </p>
+  <div class="indent-code">
+  <code>
+  <span class="italic">  //declaring an object<br></span>
+    obj frumious  <br>
+  <span class="italic">  //declaring and creating an object <br></span>
+    obj frumious{mimsy,borogove,gabe} <br>
+  <span class="italic">  //frumious is an object containing a bool, an int and an array<br></span>
+</code>
+</div>
+
+  <p> Class aptent taciti sociosqu ad litora torquent per
+  conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+  Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
+
+  </section>
+
+<section class="main-section" id="Imports">
+  <header><h2>Imports</h2></header>
+<p>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a
+  cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
+  potenti.</p>
+  <div class="indent-code"><code>
+  <span class="italic">  //use the ADD to import libraries<br></span>
+    ADD basicIO<br>
+  </code></div>
+  <p>Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.
+  Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. </p>
+  <p>Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae
+  pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+</section>
+
+<section class="main-section"  id="Syntax">
+  <header><h2>Syntax</h2></header>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+  cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non
+  quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede
+  facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et,
+  augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim.
+  Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla
+  facilisi. Integer lacinia sollicitudin massa. </p>
+
+<p>Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque
+  nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin
+  sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus,
+  commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan
+  porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu
+  diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis
+  id, sagittis at, neque. </p>
+<div class="indent-code"><code>
+<span class="italic">/*<br>
+To summarize, Jabberwocky's syntax makes no sense at all.<br>
+*/<br>
+</span>
+</code></div>
+<p>Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut
+  felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus
+  consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
+  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+  Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. </p>
+  </section>
+  </main>
+</div> <!--end wrapper div -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+  </html>

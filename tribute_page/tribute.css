@@ -1,0 +1,71 @@
+body{
+  margin-top:60px;
+  background-color: #ddd;
+  font-family:sans-serif;
+}
+#main{
+  max-width:1260px;
+  width:90%;
+  margin: auto;
+  background-color: #ccc;
+  padding: 1rem ;
+}
+#img-div{
+  border:1px solid #000;
+  border-radius: 15px;
+  padding:10px;
+  margin-bottom: 25px;
+}
+img{
+  display:block;
+  max-width:1080px;
+  width:90%;
+  margin: auto;
+}
+figcaption{
+margin-top: 1rem;
+margin-left: 25%;
+font-weight: bold;
+font-style: italic;
+}
+
+h1,h2,h3{
+  text-align:center;
+}
+h1{
+font-size: 3rem;
+
+}
+
+h2{
+  font-size:2rem;
+  font-style: italic;
+}
+
+#tribute-info{
+
+  width:70%;
+  margin:auto;
+}
+li span:first-child{
+  font-weight: bold;
+}
+
+#quote{
+  border:4px double #000;
+  border-radius: 15px;
+  padding: 2rem;
+  margin:2rem;
+}
+
+.person{
+  font-style: italic;
+  font-weight: bold;
+}
+footer{
+  margin-top:2rem;
+  border-top: 4px double #000;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
